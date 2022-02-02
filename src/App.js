@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from './containers/container/Container';
+import {Route} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Work</h1>
-      </header>
+      <Container />
     </div>
   );
 }
