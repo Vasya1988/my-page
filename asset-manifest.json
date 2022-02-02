@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Vasya1988/my-page.git/static/css/main.073c9b0a.css",
+    "main.js": "/Vasya1988/my-page.git/static/js/main.16f04f57.js",
+    "static/js/787.d3428903.chunk.js": "/Vasya1988/my-page.git/static/js/787.d3428903.chunk.js",
+    "static/media/logo.svg": "/Vasya1988/my-page.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Vasya1988/my-page.git/index.html",
+    "main.073c9b0a.css.map": "/Vasya1988/my-page.git/static/css/main.073c9b0a.css.map",
+    "main.16f04f57.js.map": "/Vasya1988/my-page.git/static/js/main.16f04f57.js.map",
+    "787.d3428903.chunk.js.map": "/Vasya1988/my-page.git/static/js/787.d3428903.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.16f04f57.js"
+  ]
+}
