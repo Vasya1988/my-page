@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import classes from './Burger.module.css';
 
 const Burger = () => {
+
+    let [wasChanged, thisChange] = useState(false);
+
     const changeBurger = () => {
         const isBurger = document.querySelector("div");
-        isBurger.classList.toggle(classes.Burger_active)
+        isBurger.classList.toggle(classes.Burger_active);
+
+        thisChange(true);
+        console.log(wasChanged)
     }
 
     return (
