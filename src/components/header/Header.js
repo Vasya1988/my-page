@@ -1,6 +1,7 @@
 import classes from './Header.module.css';
 import Burger from '../../ui/burger/Burger';
 import { NavLink } from 'react-router-dom';
+import MobileTitle from '../../ui/mobileTitle/MobileTitle';
 
 
 const Header = (props) => {
@@ -21,6 +22,7 @@ const Header = (props) => {
                     <Burger 
                         burgerActive={props.burgerActive}
                     />
+                    <MobileTitle />
                     <li><NavLink to='about' >About me</NavLink></li>
                     <li><NavLink to='js' >JavaScript</NavLink></li>
                     <li><NavLink to='photoshop' >Photoshop</NavLink></li>

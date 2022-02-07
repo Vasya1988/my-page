@@ -24,6 +24,9 @@ ul {
     justify-content: space-around;
     list-style: none;
 }
+.Header li {
+    display: block;
+}
 a {
     text-decoration: none;
     color: rgb(37, 37, 37);
@@ -37,4 +40,10 @@ a {
 }
 .burgerFirst, .burgerSecond, .burgerThird, .burgerFourth {
 
+}
+@media (max-width: 571px) {
+    .Header li {
+        display: none;
+    }
+    
 }

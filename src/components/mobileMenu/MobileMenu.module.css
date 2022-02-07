@@ -23,3 +23,11 @@
 .navActive {
     transform: translateY(0);
 }
+@media (max-width: 571px) {
+    .Navlist {
+        width: 280px;
+    }
+    .Navlist ul li {
+        padding: 18px 0;
+    }
+}
