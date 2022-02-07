@@ -3,14 +3,24 @@ import Burger from '../../ui/burger/Burger';
 import { NavLink } from 'react-router-dom';
 
 
-const Header = () => {
+const Header = (props) => {
+    const changeLeftBorderRadius = ()=>{
+        if (props.wasChanged) {
+            return 0
+        }
+    }
     return (
         <header
             className={classes.Header}
+            style={{
+                borderBottomLeftRadius: changeLeftBorderRadius()
+            }}
         >
             <nav>
                 <ul>
-                    <Burger />
+                    <Burger 
+                        burgerActive={props.burgerActive}
+                    />
                     <li><NavLink to='about' >About me</NavLink></li>
                     <li><NavLink to='js' >JavaScript</NavLink></li>
                     <li><NavLink to='photoshop' >Photoshop</NavLink></li>
