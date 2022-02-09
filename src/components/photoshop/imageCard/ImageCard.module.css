@@ -1,0 +1,13 @@
+.ImageCard {
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 32px;
+
+    object-fit: cover;
+    
+    /* background-color: rgb(221 221 221); */
+}

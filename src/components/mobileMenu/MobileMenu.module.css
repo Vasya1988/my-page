@@ -3,6 +3,7 @@
     background-color: #f1f1f1;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
+    position: absolute;
 
     transition: .3s all linear;
     transform: translateY(-194px);
@@ -26,6 +27,10 @@
 @media (max-width: 571px) {
     .Navlist {
         width: 280px;
+        transform: translateY(-232px);
+    }
+    .navActive {
+        transform: translateY(0);
     }
     .Navlist ul li {
         padding: 18px 0;
