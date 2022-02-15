@@ -6,7 +6,7 @@ const Photoshop = (props) => {
 
     return (
         <div 
-            className={classes.Photoshop}
+            className={ classes.Photoshop }
         >
             {
                 props.state.map((card, index) => {

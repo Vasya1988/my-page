@@ -1,8 +1,29 @@
 import classes from './Javascript.module.css';
+import ProjectCard from './projectCard/ProjectCard';
 
-const Javascript = () => {
+const Javascript = (props) => {
     return (
-        <h1>I'm JS</h1>
+        <div
+            className={classes.Js}
+        >
+            {
+                console.log(props.state),
+                props.state.map((source, index) => {
+                    return (
+                        <a
+                            href={ source.href }
+                            // target='_blank'
+                        >
+                            <ProjectCard
+                            key={ index }
+                            path={ source.path }
+                        />
+                            <span className={classes.span} >{ source.description}</span>
+                        </a>
+                    )
+            })
+            }
+        </div>
     )
 }
 export default Javascript;

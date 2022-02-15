@@ -1,3 +1,9 @@
 .Js {
-    
+    margin: 0 auto;
+    display: flex;
+    width: 64%;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }

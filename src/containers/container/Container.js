@@ -21,7 +21,13 @@ const Container = () => {
             {id: 7, path: require('../../img/photoshop/7.jpg')},
             {id: 8, path: require('../../img/photoshop/8.jpg')}
         ],
-        avatar: require('../../img/avatar.png')
+        avatar: require('../../img/avatar.png'),
+        projects: [
+            {id: 1, description: 'Приложение Погода, сделанное на React', href: 'https://vasya1988.github.io/weather-react-app/', path: require('../../img/js-projects/weather.png')},
+            {id: 2, description: 'Сайт со всеми телефонами Iphone, сделанный на чистом Javascript', href: 'https://vasya1988.github.io/all_iphones/', path: require('../../img/js-projects/iphone.png')},
+            {id: 3, description: 'SPA про Ведьмака, сделанный на чисто Javascript', href: 'https://vasya1988.github.io/the-witcher_/', path: require('../../img/js-projects/witcher.png')},
+            {id: 4, description: 'Quiz опрос на чистом Javascript, студенческий проект на курсах Webcademy - Javascript developer', href: 'https://vasya1988.github.io/interview/',  path: require('../../img/js-projects/interview.png')}
+        ]
     }
 
     let [wasChanged, thisChange] = useState(false);
@@ -52,7 +58,7 @@ const Container = () => {
                 />
                 <Route 
                     path="js"
-                    element={<Javascript />}
+                    element={<Javascript state={state.projects} />}
                 />
                 <Route 
                     path='photoshop'
