@@ -18,7 +18,7 @@ const Javascript = (props) => {
                             key={ index }
                             path={ source.path }
                         />
-                            <span className={classes.span} >{ source.description}</span>
+                            <span className={classes.Description} >{ source.description}</span>
                         </a>
                     )
             })

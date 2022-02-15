@@ -1,4 +1,5 @@
 import classes from './MobileMenu.module.css';
+import { NavLink } from 'react-router-dom';
 
 const MobileMenu = (props) => {
     let classActive;
@@ -15,10 +16,10 @@ const MobileMenu = (props) => {
             className={navActive()}
         >
             <ul>
-                <li><a href='/' >About me</a></li>
-                <li><a href='/' >JavaScript</a></li>
-                <li><a href='/' >Photoshop</a></li>
-                <li><a href='/' >3d animation</a></li>
+                <li><NavLink to='about' >About me</NavLink></li>
+                <li><NavLink to='js' >JavaScript</NavLink></li>
+                <li><NavLink to='photoshop' >Photoshop</NavLink></li>
+                <li><NavLink to='animation' >3d animation</NavLink></li>
             </ul>
         </nav>
     )

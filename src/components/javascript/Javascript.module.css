@@ -7,3 +7,12 @@
     justify-content: space-around;
     align-content: space-around;
 }
+
+.Description {
+    width: 230px;
+
+    display: flex;
+    align-items: center;
+
+    /* text-align: start; */
+}
