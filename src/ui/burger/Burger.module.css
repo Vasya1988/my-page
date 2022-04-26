@@ -2,6 +2,8 @@
     width: 30px;
     height: 20px;
 
+    display: none;
+
     cursor: pointer;
 
     position: relative;
@@ -34,4 +36,10 @@
 }
 .Burger_active .third {
     transform: translateY(-50%) rotate(-45deg);
+}
+
+@media (max-width: 571px) {
+    .Burger {
+        display: block;
+    }
 }

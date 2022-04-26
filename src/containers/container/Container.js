@@ -7,6 +7,7 @@ import Animation from '../../components/animation/Animation';
 import { Routes, Route } from 'react-router-dom';
 import MobileMenu from '../../components/mobileMenu/MobileMenu';
 import { useState } from 'react';
+import Welcome from '../../components/welcome/Welcome';
 
 const Container = () => {
 
@@ -31,6 +32,8 @@ const Container = () => {
     }
 
     let [wasChanged, thisChange] = useState(false);
+
+    // Смена иконки меню бургера
     const burgerActive = () => {
         if(!wasChanged) {
             thisChange(true);
@@ -52,6 +55,10 @@ const Container = () => {
                 wasChanged={ wasChanged }
             />
             <Routes>
+                <Route
+                    path='my-page'
+                    element={<Welcome  />}
+                />
                 <Route 
                     path="about"
                     element={<About avatar={state.avatar}/>}
